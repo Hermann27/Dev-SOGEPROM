@@ -1,0 +1,15 @@
+obj\Debug\Reglement_Planifié.exe
+obj\Debug\Reglement_Planifié.xml
+obj\Debug\Reglement_Planifié.pdb
+bin\Debug\Reglement_Planifié.exe
+bin\Debug\Reglement_Planifié.pdb
+bin\Debug\Reglement_Planifié.xml
+bin\Debug\Interop.Objets100Lib.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.Objets100Lib.dll
+obj\Debug\Reglement_Planifié.vbproj.ResolveComReference.cache
+obj\Debug\Reglement_Planifié.frmChargement.resources
+obj\Debug\Reglement_Planifié.Resources.resources
+obj\Debug\Reglement_Planifié.Reglement.resources
+obj\Debug\Reglement_Planifié.vbproj.GenerateResource.Cache
+bin\Debug\ConnectAPI.ini

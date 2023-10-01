@@ -1,0 +1,15 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Fournisseur_Planifié.FournisseurImportation.resources
+obj\Debug\Fournisseur_Planifié.frmChargement.resources
+obj\Debug\Fournisseur_Planifié.Resources.resources
+obj\Debug\Fournisseur_Planifié.vbproj.GenerateResource.Cache
+bin\Debug\Fournisseur_Planifié.exe
+bin\Debug\Fournisseur_Planifié.pdb
+bin\Debug\Fournisseur_Planifié.xml
+obj\Debug\Fournisseur_Planifié.vbproj.ResolveComReference.cache
+obj\Debug\Fournisseur_Planifié.exe
+obj\Debug\Fournisseur_Planifié.xml
+obj\Debug\Fournisseur_Planifié.pdb
+bin\Debug\ConnectAPI.ini
+bin\Debug\Interop.Objets100Lib.dll
+obj\Debug\Interop.Objets100Lib.dll

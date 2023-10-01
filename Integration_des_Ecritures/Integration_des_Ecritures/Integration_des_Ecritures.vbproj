@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24C2DE59-302E-473E-A1F0-6A9C8576D2A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Integration_des_Ecritures.My.MyApplication</StartupObject>
+    <RootNamespace>Integration_des_Ecritures</RootNamespace>
+    <AssemblyName>Integration_des_Ecritures</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <SignAssembly>false</SignAssembly>
+    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>F679E6025531BFE1D18EC3B65A6EE9821A7E90D3</ManifestCertificateThumbprint>
+    <ManifestKeyFile>INTEGRATION_TemporaryKey.pfx</ManifestKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationIcon>waza icone.ico</ApplicationIcon>
+    <TargetZone>LocalIntranet</TargetZone>
+    <PublishUrl>C:\Comptabilisation\SETUP\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/INTEGRATION/</UpdateUrl>
+    <TargetCulture>fr</TargetCulture>
+    <ProductName>WAZA APPLICATION</ProductName>
+    <PublisherName>WAZA APPLICATION</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>Waza-Software.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Integration_des_Ecritures.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Integration_des_Ecritures.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjouterUnFormatTiers.designer.vb">
+      <DependentUpon>AjouterUnFormatTiers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterUnFormatTiers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterUnFormatEcriture.Designer.vb">
+      <DependentUpon>AjouterUnFormatEcriture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterUnFormatEcriture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Connect.vb" />
+    <Compile Include="ClientSchematintegrer.designer.vb">
+      <DependentUpon>ClientSchematintegrer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSchematintegrer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientImportation.designer.vb">
+      <DependentUpon>ClientImportation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientImportation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeleReglement.designer.vb">
+      <DependentUpon>ModeleReglement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModeleReglement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportJournalisation.Designer.vb">
+      <DependentUpon>ExportJournalisation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExportJournalisation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="RepertoireImport.Designer.vb">
+      <DependentUpon>RepertoireImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RepertoireImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reglementlibre.designer.vb">
+      <DependentUpon>Reglementlibre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reglementlibre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reglement.designer.vb">
+      <DependentUpon>Reglement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reglement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EtatDeConexion.designer.vb">
+      <DependentUpon>Frm_EtatDeConexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_EtatDeConexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchematintegrerFournisseur.designer.vb">
+      <DependentUpon>SchematintegrerFournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerFournisseur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecriturelibre.designer.vb">
+      <DependentUpon>Ecriturelibre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ecriturelibre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatDintegrationEcriture.designer.vb">
+      <DependentUpon>FormatDintegrationEcriture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormatDintegrationEcriture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametrage.designer.vb">
+      <DependentUpon>Parametrage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parametrage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Clientspecifique.designer.vb">
+      <DependentUpon>Frm_Clientspecifique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Clientspecifique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Client.designer.vb">
+      <DependentUpon>Frm_Client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Forunisseurspecifique.designer.vb">
+      <DependentUpon>Frm_Forunisseurspecifique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Forunisseurspecifique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Fournisseur.designer.vb">
+      <DependentUpon>Frm_Fournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Fournisseur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatDintegrationTiers.designer.vb">
+      <DependentUpon>FormatDintegrationTiers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormatDintegrationTiers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiersFournisseurlibre.designer.vb">
+      <DependentUpon>TiersFournisseurlibre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TiersFournisseurlibre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FournisseurImportation.designer.vb">
+      <DependentUpon>FournisseurImportation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FournisseurImportation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr_ImportationEcriture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr_ImportationEcriture.Designer.vb">
+      <DependentUpon>Fr_ImportationEcriture.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChargement.designer.vb">
+      <DependentUpon>frmChargement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChargement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Position.Designer.vb">
+      <DependentUpon>Frm_Position.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Position.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journalisation.Designer.vb">
+      <DependentUpon>Journalisation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Journalisation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuApplication.designer.vb">
+      <DependentUpon>MenuApplication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerEcriture.designer.vb">
+      <DependentUpon>SchematintegrerEcriture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchematintegrerEcriture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AjouterUnFormatTiers.resx">
+      <DependentUpon>AjouterUnFormatTiers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterUnFormatEcriture.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AjouterUnFormatEcriture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientSchematintegrer.resx">
+      <DependentUpon>ClientSchematintegrer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientImportation.resx">
+      <DependentUpon>ClientImportation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportJournalisation.resx">
+      <DependentUpon>ExportJournalisation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepertoireImport.resx">
+      <DependentUpon>RepertoireImport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reglementlibre.resx">
+      <DependentUpon>Reglementlibre.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reglement.resx">
+      <DependentUpon>Reglement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EtatDeConexion.resx">
+      <DependentUpon>Frm_EtatDeConexion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematintegrerFournisseur.resx">
+      <DependentUpon>SchematintegrerFournisseur.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecriturelibre.resx">
+      <DependentUpon>Ecriturelibre.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatDintegrationEcriture.resx">
+      <DependentUpon>FormatDintegrationEcriture.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametrage.resx">
+      <DependentUpon>Parametrage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Clientspecifique.resx">
+      <DependentUpon>Frm_Clientspecifique.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Client.resx">
+      <DependentUpon>Frm_Client.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Forunisseurspecifique.resx">
+      <DependentUpon>Frm_Forunisseurspecifique.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Fournisseur.resx">
+      <DependentUpon>Frm_Fournisseur.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatDintegrationTiers.resx">
+      <DependentUpon>FormatDintegrationTiers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiersFournisseurlibre.resx">
+      <DependentUpon>TiersFournisseurlibre.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Position.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Position.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FournisseurImportation.resx">
+      <DependentUpon>FournisseurImportation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr_ImportationEcriture.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Fr_ImportationEcriture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChargement.resx">
+      <DependentUpon>frmChargement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journalisation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Journalisation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuApplication.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MenuApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuApplication.resx">
+      <DependentUpon>MenuApplication.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchematintegrerEcriture.resx">
+      <DependentUpon>SchematintegrerEcriture.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image034.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowforward_16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications_161.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="Resources\delete_16.ico" />
+    <None Include="Resources\foldeopen_16.ico" />
+    <None Include="Resources\arrowforward_161.ico" />
+    <None Include="Resources\arrowforward_16.ico" />
+    <None Include="Resources\arrowback_16.ico" />
+    <None Include="Resources\arrowup_16.ico" />
+    <None Include="Resources\arrowdown_16.ico" />
+    <None Include="Resources\image019.gif" />
+    <None Include="Resources\add_32.ico" />
+    <None Include="Resources\add_16.ico" />
+    <None Include="Resources\delete_161.ico" />
+    <None Include="Resources\documents_16.ico" />
+    <None Include="Resources\forms.gif" />
+    <None Include="Resources\export_over.gif" />
+    <None Include="Resources\create.gif" />
+    <None Include="Resources\add_16.bmp" />
+    <None Include="Resources\add_16.gif" />
+    <None Include="Resources\export.gif" />
+    <None Include="Resources\criticalind_status.gif" />
+    <None Include="Resources\base.ico" />
+    <None Include="Resources\exportcsv.ico" />
+    <EmbeddedResource Include="ModeleReglement.resx">
+      <DependentUpon>ModeleReglement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Resources\image0201.gif" />
+    <None Include="Resources\modif.ico" />
+    <None Include="Resources\Papier peint Waza.bmp" />
+    <Content Include="waza icone.ico" />
+    <None Include="Resources\newSp.gif" />
+    <None Include="Resources\insert.gif" />
+    <None Include="Resources\image033.gif" />
+    <None Include="Resources\image1.gif" />
+    <None Include="Resources\user.gif" />
+    <None Include="Resources\save_162.ico" />
+    <None Include="Resources\save_161.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Objets100Lib">
+      <Guid>{EBE49B80-2CEA-499E-AAB4-F9D88369EAA6}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

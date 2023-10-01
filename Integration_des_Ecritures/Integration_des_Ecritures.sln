@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Integration_des_Ecritures", "Integration_des_Ecritures\Integration_des_Ecritures.vbproj", "{24C2DE59-302E-473E-A1F0-6A9C8576D2A0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Integration des Ecritures", "Integration des Ecritures\Integration des Ecritures.vdproj", "{E4784EC1-B578-4174-8F9D-CEB181EE1873}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24C2DE59-302E-473E-A1F0-6A9C8576D2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C2DE59-302E-473E-A1F0-6A9C8576D2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C2DE59-302E-473E-A1F0-6A9C8576D2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C2DE59-302E-473E-A1F0-6A9C8576D2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4784EC1-B578-4174-8F9D-CEB181EE1873}.Debug|Any CPU.ActiveCfg = Debug
+		{E4784EC1-B578-4174-8F9D-CEB181EE1873}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
